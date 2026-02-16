@@ -47,10 +47,10 @@ export default function Home() {
         <section id="About" className="flex flex-col min-h-[100vh]">
           <About />
         </section>
-        <section id="Skils" className="flex flex-col h-[90vh]">
+        <section id="Skils" className="flex flex-col">
           <Skils />
         </section>
-        <section id="Projects" className="flex flex-col min-h-[100vh]">
+        <section id="Projects" className="flex flex-col">
           <Projects />
         </section>
       </main>

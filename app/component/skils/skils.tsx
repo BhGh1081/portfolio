@@ -10,7 +10,7 @@ export default function Skils() {
     return (
         <div className="w-full flex flex-col gap-15 pt-20">
             <p className="text-[22px] font-bold text-primary">My Skils</p>
-            <div className="pl-5">
+            <div className="">
                 <div className="flex flex-col gap-10">
                     <div>
                         <p className="text-[18px] font-bold mb-4">Core Front-End</p>
@@ -27,7 +27,7 @@ export default function Skils() {
                     </div>
                 </div>
             </div>
-            <div className="flex gap-2 p-5">
+            <div className="flex gap-2 p-5 pl-0">
                 <RiJavascriptLine className="w-8 h-8" />
                 <RiNextjsLine className="w-8 h-8" />
                 <RiReactjsLine className="w-8 h-8" />
