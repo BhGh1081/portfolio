@@ -30,7 +30,7 @@ body {
 
 @media(max-width: 640px) {
   html {
-    font-size: small;
+    font-size: 14px;
   }
 }
 
@@ -39,5 +39,11 @@ body {
   scrollbar-width: thin;
   scrollbar-color: var(--primary);
 
+}
+
+@media(min-width: 1440px) {
+  html {
+    font-size: larger;
+  }
 }
 

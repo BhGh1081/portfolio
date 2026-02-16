@@ -40,8 +40,8 @@ export default function Home() {
   return (
     <div className="h-screen w-full flex flex-col overflow-hidden font-sans">
       <Menu active={active} />
-      <main ref={mainRef} className="w-full overflow-y-auto overflow-x-hidden flex-1 sm:items-center items-start py-10 lg:px-30 xl:px-50 scroll-smooth p-5">
-        <div className="flex h-full w-full mb-10 items-center">
+      <main ref={mainRef} className="w-full overflow-y-auto overflow-x-hidden flex-1 sm:items-center items-start py-10 lg:px-30 scroll-smooth p-5">
+        <div className="flex h-full w-full mb-10 items-center justify-center">
           <HeroSection />
         </div>
         <section id="About" className="flex flex-col min-h-[100vh]">
