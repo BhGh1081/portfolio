@@ -11,7 +11,7 @@ export default function About() {
         <div className="w-full flex flex-col gap-15">
             <p className="text-[22px] font-bold text-primary">About Me</p>
             <div className="flex">
-                <div>
+                <div className="bg-gradient-to-r from-pink-900/7 to-background rounded-lg p-5">
                     <p className="flex items-center text-[22px] gap-2"><HiAcademicCap /> Education</p>
                     <div className="p-5">
                         <p className="font-bold text-[20px]">B.E. in Software Engineering</p>
@@ -26,7 +26,7 @@ export default function About() {
                     </div>
                 </div>
             </div>
-            <div>
+            <div className="bg-gradient-to-r from-pink-900/7 to-background rounded-lg p-5">
                 <p className="flex gap-2 text-[22px] items-center"><SiBookstack />Courses</p>
                 <div className="p-5">
                     <p className="font-bold text-[18px]">Product Design Online Course</p>
@@ -42,7 +42,7 @@ export default function About() {
                     </p>
                 </div>
             </div>
-            <div>
+            <div className="bg-gradient-to-r from-pink-900/7 to-background rounded-lg p-5">
                 <p className="flex gap-2 text-[22px] items-center"><LuBriefcaseBusiness />Work Experience</p>
                 <div className="p-5">
                     <p className="font-bold text-[18px]">WordPress Website Manager</p>

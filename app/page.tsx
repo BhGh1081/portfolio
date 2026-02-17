@@ -6,6 +6,7 @@ import Menu from "./component/hero/menu";
 import { useState, useRef, useEffect } from "react";
 import Skils from "./component/skils/skils";
 import Projects from "./component/projects/projects";
+import Contact from "./component/contact";
 
 
 export default function Home() {
@@ -54,6 +55,9 @@ export default function Home() {
           <Projects />
         </section>
       </main>
+      <div className="flex items-center justify-center h-[80px] w-full items-center shadow-lg shadow-white">
+        <Contact />
+      </div>
     </div>
   );
 }

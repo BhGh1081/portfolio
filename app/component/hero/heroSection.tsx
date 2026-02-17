@@ -1,9 +1,8 @@
 import { BriefcaseIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { CiLinkedin } from "react-icons/ci";
-import { FaGithub, FaRegCalendarAlt  } from "react-icons/fa";
-import { IoLocationOutline } from "react-icons/io5";
-import { MdOutlinePhone } from "react-icons/md";
+import { FaGithub } from "react-icons/fa";
+
 
 
 
@@ -19,7 +18,7 @@ export default function HeroSection() {
                     <h2 className="text-[1.2rem] flex sm:items-center gap-2">
                         <BriefcaseIcon className="w-5 h-5" />Junior Front-End Developer
                     </h2>
-                    <p className="mb-10 flex items-center gap-2 text-sm text-gray-400"><IoLocationOutline /> Tehran | <MdOutlinePhone /> 09355367233 | <FaRegCalendarAlt /> Born: 09/09/1995</p>
+                    
                     <p className="text-center md:text-start mb-10">Front-End Developer focused on Next.js, React and TypeScript. Currently seeking an internship to gain real-world experience and contribute to meaningful projects.</p>
                     <Link href={'https://github.com/BhGh1081'} className="flex items-center gap-2 hover:text-primary"><FaGithub /><u>github.com/BhGh1081</u></Link>
                     <Link href={'https://www.linkedin.com/in/bh-gholami'} className="flex items-center gap-2 hover:text-primary"><CiLinkedin /><u>linkedin.com/in/bh-gholami</u></Link>
