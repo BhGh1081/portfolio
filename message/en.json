@@ -1,0 +1,121 @@
+{
+    "menu": {
+        "about": "About",
+        "skills": "Skils",
+        "projects": "Projects"
+    },
+    "hero": {
+        "name": "Bahareh",
+        "family": "Gholami",
+        "proficiency": "Junior Front-End Developer",
+        "discription": "Front-End Developer focused on Next.js, React and TypeScript. Currently seeking an internship to gain real world experience and contribute to meaningful projects."
+    },
+    "about": {
+        "heading": "About Me",
+        "education": {
+            "heading": "Education",
+            "title": "Education",
+            "degree": "B.E. in Software Engineering",
+            "uni": "Raja University – June 2016",
+            "project": {
+                "title": "University Final Project",
+                "name": "Language School Management Software",
+                "tech": "Technologies",
+                "techs": "C#, Windows Forms, SQL Server",
+                "disTitle": "Description",
+                "discription": "Developed a desktop application for managing classes and students in language schools incoluded course management and basic reporting."
+            }
+        },
+        "courses": {
+            "heading": "Courses",
+            "title": "Product Design Online Course",
+            "academy": "Amanj Academy - July 2022",
+            "discription": "Through this product design course, I learned that building a successful product is not only about solving a problem — it’s about creating an enjoyable experience that users prefer over alternatives. The course covered essential design practices such as wireframing, prototyping, user flow planning, clear navigation, accessibility, and creating products that are easy to learn and use.",
+            "project": {
+                "title": "Course Project",
+                "name": "Personal Accounting App – UI/UX Design",
+                "platform": "Platform",
+                "discription": "Designed a Responsive personal finance management app interface using Figma. Focused on user-centered design principles, including income/expense tracking, category management, and report visualization.",
+                "view": "View Project",
+                "acquired": "Concepts Acquired",
+                "1": "Wireframing & Prototyping",
+                "2": "User flow & navigation",
+                "3": "Usability improvements",
+                "4": "Accessibility"
+            }
+        },
+        "experience": {
+            "heading": "Work Experience",
+            "title": "WordPress Website Manager",
+            "place": "Shahidi Trading Group – Jan-Nov 2024",
+            "1": "Managed and updated website content through WordPress CMS",
+            "2": "Installed configured themes and plugins",
+            "3": "Applied basic SEO using Yoast SEO",
+            "4": "Troubleshot issues via WordPress admin panel",
+            "5": "Designed mobile-friendly pages with Elementor",
+            "focuse": "Current Focus",
+            "discription": "Transitioning toward modern Front-End development using React, Next.js, TypeScript and Tailwind through personal projects."
+        }
+    },
+    "skils": {
+        "heading": "My Skils",
+        "1": {
+            "title": "Core Front-End",
+            "item1": "JavaScript, Next.js, React, TypeScript",
+            "item2": "HTML, CSS, Tailwind, Responsive Design, REST API"
+        },
+        "2": {
+            "title": "UI/UX & Design",
+            "item": "Figma, UX/UI, Wireframing, Prototyping"
+        },
+        "3": {
+            "title": "Tools",
+            "iems": "Git, Postman, WordPress, Adobe Photoshop, Adobe Illustrator, Adobe Premiere"
+        }
+    },
+    "projects": {
+        "heading" : "Projects"
+    },
+    "contact": {
+        "city": "Tehran",
+        "born": "Born",
+        "date": "09/09/1995"
+    },
+    "card":{
+        "todo" : {
+            "title": "Todo App",
+            "discription": "A full-stack task management application featuring secure authentication, user-specific task management, search & filtering, categorization, and full CRUD operations with persistent storage."
+        },
+        "dashboard": {
+            "title": "Dashboard",
+            "discription": "E-commerce site management dashboard for managing users, customers, orders, and revenue using React and Next.js."
+        }
+    },
+    "todoApp": {
+        "header": "Todo App",
+        "title": "Full-Stack Task Management Application",
+        "demo": "Live Demo",
+        "account": "Demo Account:",
+        "emial": "Email",
+        "pass": "passwoard",
+        "github": "GitHub Repository"
+    },
+    "overview": {
+        "title": "Overview",
+        "discription": "This is a full-stack task management application built with Next.js and Supabase. The app allows users to securely authenticate, manage their own tasks, and interact with a persistent database. It focuses on clean UI, responsive design."
+    },
+    "features":{
+        "title": "Key Features",
+        "1": "Secure user authentication",
+        "2": "User-specific task management",
+        "3": "Create, edit, delete, and update tasks (CRUD)",
+        "4": "Search and filter functionality",
+        "5": "Task categorization",
+        "6": "Persistent database storage",
+        "7": "Fully responsive design"
+    },
+    "challenge": {
+        "title": "Challenges & Solutions",
+        "discription": "A key challenge was configuring NextAuth providers and managing authentication consistently across both client-side and server-side environments, which required proper session handling and protected route logic."
+    }
+}

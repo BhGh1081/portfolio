@@ -7,10 +7,12 @@ import { useState, useRef, useEffect } from "react";
 import Skils from "./component/skils/skils";
 import Projects from "./component/projects/projects";
 import Contact from "./component/contact";
+import { useTranslations } from "next-intl";
 
 
 export default function Home() {
 
+  const t = useTranslations("menu");
   const mainRef = useRef<HTMLElement>(null);
   const [active, setActive] = useState("");
 
@@ -45,13 +47,13 @@ export default function Home() {
         <div className="flex h-full w-full mb-10 items-center justify-center">
           <HeroSection />
         </div>
-        <section id="About" className="flex flex-col min-h-[100vh]">
+        <section id={t("about")} className="flex flex-col min-h-[100vh]">
           <About />
         </section>
-        <section id="Skils" className="flex flex-col">
+        <section id={t("skills")} className="flex flex-col">
           <Skils />
         </section>
-        <section id="Projects" className="flex flex-col">
+        <section id={t("projects")} className="flex flex-col">
           <Projects />
         </section>
       </main>

@@ -33,13 +33,20 @@ export default function About() {
                     <i>Amanj Academy - July 2022</i>
                     <p className="pt-2">Through this product design course, I learned that building a successful product is not only about solving a problem — it’s about creating an enjoyable experience that users prefer over alternatives. The course covered essential design practices such as wireframing, prototyping, user flow planning, clear navigation, accessibility, and creating products that are easy to learn and use.</p>
                 </div>
-                <div className="p-5">
-                    <p className="font-bold">Course Project: Personal Accounting App – UI/UX Design</p>
-                    <p className=""><strong>Platform:</strong> Figma</p>
-                    <p className="font-bold">Description</p>
-                    <p className="">Developed a desktop application for managing classes and students in language schools incoluded course management and basic reporting. 
-                        <Link href={'https://www.figma.com/proto/i5UPY0pxpSOuYamsNvfPGr/Manito?node-id=12-2&starting-point-node-id=1%3A3&t=l0GFAM0lXRXvpUhJ-1'} className="hover:text-primary pl-2 font-bold"><u>View Project</u></Link>
-                    </p>
+                <div className="p-5 space-y-10">
+                    <div>
+                        <p className="font-bold">Course Project: Personal Accounting App – UI/UX Design</p>
+                        <p className=""><strong>Platform:</strong> Figma</p>
+                        <p className="font-bold">Description</p>
+                        <p className="">
+                            <Link href={'https://www.figma.com/proto/i5UPY0pxpSOuYamsNvfPGr/Manito?node-id=12-2&starting-point-node-id=1%3A3&t=l0GFAM0lXRXvpUhJ-1'} className="hover:text-primary pl-2 font-bold"><u>View Project</u></Link>
+                        </p>
+                    </div>
+                    <ul className="list-disc"><strong>Learned</strong>
+                        <li>Wireframing & Prototyping</li>
+                        <li>User flow & navigation</li>
+                        <li>Usability improvements</li>
+                    </ul>
                 </div>
             </div>
             <div className="bg-gradient-to-r from-pink-900/7 to-background rounded-lg p-5">

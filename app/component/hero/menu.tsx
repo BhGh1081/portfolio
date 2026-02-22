@@ -1,18 +1,28 @@
+'use client';
+
 import clsx from "clsx";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export default function Menu ({className, active} : {className?: string, active:string}) {
 
-    const menu = ['About','Skils','Projects'];
+    const t = useTranslations("menu")
     
     return(
         <div className="w-full justify-center flex p-5">
-            <ul className="flex gap-10">
-                {menu.map((item,index) => 
-                <li key={index}>
-                    <Link href={`#${item}`}
-                        className={clsx("hover:text-primary", item === active && 'text-primary text-[1.1rem]')}>{item}</Link>
-                </li>)}
+            <ul className="flex gap-10"> 
+                <li>
+                    <Link href={`#${t('about')}`}
+                        className={clsx("hover:text-primary", t("about") === active && 'text-primary text-[1.1rem]')}>{t("about")}</Link>
+                </li>
+                <li>
+                    <Link href={`#${t('skills')}`}
+                        className={clsx("hover:text-primary", t("skills") === active && 'text-primary text-[1.1rem]')}>{t("skills")}</Link>
+                </li>
+                <li>
+                    <Link href={`#${t('projects')}`}
+                        className={clsx("hover:text-primary", t("projects") === active && 'text-primary text-[1.1rem]')}>{t("projects")}</Link>
+                </li>
             </ul>
         </div>
     )
