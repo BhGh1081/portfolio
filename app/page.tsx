@@ -2,12 +2,13 @@
 
 import About from "./component/about/about";
 import HeroSection from "./component/hero/heroSection";
-import Menu from "./component/hero/menu";
+import Menu from "./ui/menu";
 import { useState, useRef, useEffect } from "react";
 import Skils from "./component/skils/skils";
 import Projects from "./component/projects/projects";
 import Contact from "./component/contact";
 import { useTranslations } from "next-intl";
+import LangugeBtn from "./ui/langugeBTN";
 
 
 export default function Home() {
@@ -57,7 +58,7 @@ export default function Home() {
           <Projects />
         </section>
       </main>
-      <div className="flex items-center justify-center h-[80px] w-full items-center shadow-lg shadow-white">
+      <div className="flex items-center justify-center h-[60px] md:h-[80px] w-full items-center shadow-lg shadow-white">
         <Contact />
       </div>
     </div>

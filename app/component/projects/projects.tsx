@@ -1,12 +1,16 @@
 import Card from "./card";
 import { dataType } from "@/app/lib/definition";
+import { useTranslations } from "next-intl";
+
 
 export default function Projects() {
 
+    const t = useTranslations('projects')
+
     const todoData: dataType = {
-        title: "Todo App",
+        title: "todoTitle",
         techs: ['Next', 'React', 'TypeScript', 'Supabase'],
-        description: "A full-stack task management application featuring secure authentication, user-specific task management, search & filtering, categorization, and full CRUD operations with persistent storage",
+        description: 'todoDescription',
         badge: "Full Stack",
         href: '/todo-app',
         img1: '/tododesktop.png',
@@ -14,18 +18,18 @@ export default function Projects() {
     }
 
     const dashboardData: dataType = {
-        title: 'Dashboard',
+        title: 'dashboardTitle',
         techs: ['Next', 'React', 'TypeScript', 'Tailwind'],
-        description: "E-commerce site management dashboard for managing users, customers, orders, and revenue using React and Next.js",
+        description: 'dashboardDescription',
         href: '/dashboard',
         img1: '/1-dash.webp',
         img2: '/2-dashboard.webp'
     }
 
     return (
-        <div className="flex flex-col gap-15 pt-20">
-            <p className="text-[22px] font-bold text-primary">Projects</p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="flex flex-col gap-10 pt-20">
+            <p className="text-[22px] font-bold text-primary">{t('headding')}</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
                 <Card data={todoData} />
                 <Card data={dashboardData} />
             </div>

@@ -9,3 +9,13 @@ export type dataType = {
     img1: string,
     img2: string
 }
+
+export type slideData = {
+    id: number,
+    src: string
+}
+
+export type contextType = {
+    locale: 'fa' | 'en';
+    setLocale: React.Dispatch<React.SetStateAction<"fa" | "en">>
+}

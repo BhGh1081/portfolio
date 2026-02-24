@@ -7,29 +7,34 @@ import {
     TbBrandAdobePhotoshop, TbBrandAdobePremier
 } from "react-icons/tb";
 import { SiPostman, SiWordpress } from "react-icons/si";
+import { useTranslations } from "next-intl";
+import clsx from "clsx";
+import { useLocale } from "next-intl";
 
 export default function Skils() {
 
+    const t = useTranslations('skills')
+    const locale = useLocale();
 
     return (
-        <div className="w-full flex flex-col gap-15 pt-20">
-            <p className="text-[22px] font-bold text-primary">My Skils</p>
+        <div className="w-full flex flex-col gap-10 pt-20">
+            <p className="text-[22px] font-bold text-primary">{t('headding')}</p>
             <div>
                 <div className="flex flex-col gap-5">
-                    <div className="bg-gradient-to-r from-gray-700/25 to-background rounded-lg p-5">
-                        <p className="text-[18px] font-bold mb-4">Core Front-End</p>
-                        <p>JavaScript, Next.js, React, TypeScript</p>
-                        <p>HTML, CSS, Tailwind, Responsive Design, REST API</p>
+                    <div className={clsx(`from-gray-700/25 to-background rounded-xl p-5`, locale === 'en' ? 'bg-gradient-to-r' : 'bg-gradient-to-l')}>
+                        <p className="text-[18px] font-bold mb-4">{t('1.title')}</p>
+                        <p>{t('1.item1')}</p>
+                        <p>{t('1.item2')}</p>
                     </div>
-                    <div className="bg-gradient-to-r from-gray-700/25 to-background rounded-lg p-5">
-                        <p className="text-[18px] font-bold mb-4">UI/UX & Design</p>
-                        <p>Figma, UX/UI, Wireframing, Prototyping</p>
+                    <div className={clsx(`from-gray-700/25 to-background rounded-xl p-5`, locale === 'en' ? 'bg-gradient-to-r' : 'bg-gradient-to-l')}>
+                        <p className="text-[18px] font-bold mb-4">{t('2.title')}</p>
+                        <p>{t('2.item')}</p>
                     </div>
-                    <div className="bg-gradient-to-r from-gray-700/25 to-background rounded-lg p-5">
-                        <p className="text-[18px] font-bold mb-4">Tools</p>
-                        <p>Git, Postman, WordPress, Adobe Photoshop, Adobe Illustrator, Adobe Premiere</p>
+                    <div className={clsx(`from-gray-700/25 to-background rounded-xl p-5`, locale === 'en' ? 'bg-gradient-to-r' : 'bg-gradient-to-l')}>
+                        <p className="text-[18px] font-bold mb-4">{t('3.title')}</p>
+                        <p>{t('3.item')}</p>
                     </div>
-                    <div className="flex gap-2 p-5 bg-gradient-to-r from-gray-700/25 to-background rounded-lg">
+                    <div className={clsx(`flex gap-2 from-gray-700/25 to-background rounded-xl p-5`, locale === 'en' ? 'bg-gradient-to-r' : 'bg-gradient-to-l')}>
                     <RiJavascriptLine className="w-8 h-8" />
                     <RiNextjsLine className="w-8 h-8" />
                     <RiReactjsLine className="w-8 h-8" />
