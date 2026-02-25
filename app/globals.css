@@ -31,19 +31,29 @@ body {
   html {
     font-size: small;
   }
+
+  ::-webkit-scrollbar{
+    display: none;
 }
 
-.scrollbar::-webkit-scrollbar{
-
-  scrollbar-width: thin;
-  scrollbar-color: var(--primary);
-
 }
+
 
 @media(min-width: 1440px) {
   html {
     font-size: larger;
   }
 }
+
+
+::-webkit-scrollbar{
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color:#ff6900;
+  border-radius: 9999px;
+}
+
 
 
