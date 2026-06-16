@@ -39,7 +39,7 @@ export default function TodoApp() {
                                 <p>{t('todoApp.pass')}</p>
                             </section>
                         </Link>
-                        <Link href={'https://github.com/BhGh1081/Todo-List.git'} className={clsx(`flex gap-2 hover:text-primary from-yellow-500/7 to-background rounded-lg p-5`, locale === 'en' ? 'bg-gradient-to-r' : 'bg-gradient-to-l')}>
+                        <Link href={'https://github.com/BhGh1081/todo-list-stack.git'} className={clsx(`flex gap-2 hover:text-primary from-yellow-500/7 to-background rounded-lg p-5`, locale === 'en' ? 'bg-gradient-to-r' : 'bg-gradient-to-l')}>
                             <RiGitRepositoryCommitsLine className="w-5 h-5" />
                             <u>{t('todoApp.github')}</u>
                         </Link>
