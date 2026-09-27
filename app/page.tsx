@@ -5,7 +5,7 @@ import HeroSection from "./component/hero/heroSection";
 import Menu from "./ui/menu";
 import { useState, useRef, useEffect } from "react";
 import Skils from "./component/skils/skils";
-import Projects from "./component/projects/projects";
+import CardWrapper from "./component/projects/card";
 import Contact from "./component/contact";
 import { useTranslations } from "next-intl";
 import LangugeBtn from "./ui/langugeBTN";
@@ -55,7 +55,7 @@ export default function Home() {
           <Skils />
         </section>
         <section id={t("projects")} className="flex flex-col">
-          <Projects />
+          <CardWrapper />
         </section>
       </main>
       <div className="flex items-center justify-center h-[60px] md:h-[80px] w-full items-center shadow-lg shadow-white">
