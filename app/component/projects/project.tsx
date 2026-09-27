@@ -1,3 +1,5 @@
+'use client';
+
 import { useTranslations, useLocale } from "next-intl";
 import clsx from "clsx";
 import Link from "next/link";
@@ -17,18 +19,18 @@ export function Introduction({ projectName }: { projectName: string }) {
             <p className="text-[1.1rem]">{t('title')}</p>
             <div className="pt-5 space-y-1">
                 <div className={clsx(`flex flex-col gap-1 from-primary/7 to-background rounded-lg p-4`, locale === 'en' ? 'bg-linear-to-r' : 'bg-linear-to-l')}>
-                    <Link href={'https://todo.gholamidev.ir/'} className="flex w-fit gap-2 hover:text-primary">
+                    <Link href={'https://dashboard.gholamidev.ir//'} className="flex w-fit gap-2 hover:text-primary">
                         <LuLink className="w-5 h-5" />
                         <u>{t('demo')}</u>
                     </Link>
                     <section className="text-sm p-2">
                         <p className="font-bold">{t('account')}</p>
-                        <p>{t('email')}</p>
+                        <p>{t('userName')}</p>
                         <p>{t('pass')}</p>
                     </section>
                 </div>
                 <div className={clsx(`flex gap-2 from-yellow-500/7 to-background rounded-lg p-5`, locale === 'en' ? 'bg-linear-to-r' : 'bg-linear-to-l')}>
-                    <Link href={'https://github.com/BhGh1081/todo-list-stack.git'} className="flex w-fit gap-2 hover:text-primary" >
+                    <Link href={'https://github.com/BhGh1081/OnlineShop-Dashboard.git'} className="flex w-fit gap-2 hover:text-primary" >
                         <RiGitRepositoryCommitsLine className="w-5 h-5" />
                         <u>{t('github')}</u>
                     </Link>
