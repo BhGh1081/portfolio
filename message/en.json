@@ -93,33 +93,41 @@
         }
     },
     "project": {
+        "tech": {
+            "title": "Tech Stack"
+        },
         "todoApp": {
-            "header": "Todo App",
-            "title": "Full-Stack Task Management Application",
-            "demo": "Live Demo",
-            "account": "Demo Account:",
-            "email": "Email: user@demo.com",
-            "pass": "passwoard: 12345",
-            "github": "GitHub Repository"
-        },
-        "overview": {
-            "title": "Overview",
-            "description": "This is a full-stack task management application built with Next.js and Supabase. The app allows users to securely authenticate, manage their own tasks, and interact with a persistent database. It focuses on clean UI, responsive design."
-        },
-        "features": {
-            "title": "Key Features",
-            "1": "Secure user authentication",
-            "2": "User-specific task management",
-            "3": "Create, edit, delete, and update tasks (CRUD)",
-            "4": "Search and filter functionality",
-            "5": "Task categorization",
-            "6": "Persistent database storage",
-            "7": "Fully responsive design"
-        },
-        "tech": {"title": "Tech Stack"},
-        "challenges": {
-            "title": "Challenges & Solutions",
-            "description": "A key challenge was configuring NextAuth providers and managing authentication consistently across both client-side and server-side environments, which required proper session handling and protected route logic."
+            "introduction": {
+                "header": "Todo App",
+                "title": "Full-Stack Task Management Web Application",
+                "demo": "Live Demo",
+                "account": "Demo Account:",
+                "email": "Email: user@demo.com",
+                "pass": "passwoard: 12345",
+                "github": "GitHub Repository"
+            },
+            "overview": {
+                "title": "Overview",
+                "description": "This is a full-stack task management application built with Next.js and Supabase. The app allows users to securely authenticate, manage their own tasks, and interact with a persistent database. It focuses on clean UI, responsive design."
+            },
+            "features": {
+                "title": "Key Features",
+                "items": [
+                    "Secure user authentication",
+                    "User-specific task management",
+                    "Create, edit, delete, and update tasks (CRUD)",
+                    "Search and filter functionality",
+                    "Task categorization",
+                    "Persistent database storage",
+                    "Fully responsive design"
+                ]
+            },
+            "challenges": {
+                "title": "Challenges & Solutions",
+                "items": [
+                    "A key challenge was configuring NextAuth providers and managing authentication consistently across both client-side and server-side environments, which required proper session handling and protected route logic."
+                ]
+            }
         }
     }
 }
