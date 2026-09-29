@@ -1,5 +1,8 @@
+'use client';
+
 import Slider from "../ui/slider"
-import { Introduction } from "../component/projects/project"
+import { Introduction, Features, Roadmap } from "../component/projects/project"
+
 
 export default function Dashboard() {
 
@@ -10,12 +13,15 @@ export default function Dashboard() {
     ]
 
     return (
-        <div className="p-10 lg:px-30 min-h-screen">
+        <div className="p-10 lg:px-30 min-h-screen space-y-20">
             <div className="flex flex-col gap-10">
                 <Introduction projectName="dashboard" />
                 <Slider slides={slides} />
             </div>
-            <div className="flex flex-col gap-5 items-center justify-center h-screen">
+            <Features projectName="dashboard" />
+            <Roadmap projectName="dashboard" />
+            
+            <div className="flex flex-col gap-5 items-center justify-center">
                 <img
                     src='/under-construction.svg'
                     className="w-170" />

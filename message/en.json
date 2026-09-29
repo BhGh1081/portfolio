@@ -146,19 +146,26 @@
             "features": {
                 "title": "Key Features",
                 "items": [
-                    "Secure user authentication",
-                    "User-specific task management",
-                    "Create, edit, delete, and update tasks (CRUD)",
-                    "Search and filter functionality",
-                    "Task categorization",
-                    "Persistent database storage",
-                    "Fully responsive design"
+                    "Secure login with httpOnly cookies (not localStorage)",
+                    "Protected dashboard routes",
+                    "Live stat cards and revenue chart",
+                    "Fast, cached data with TanStack Query"
                 ]
             },
             "challenges": {
                 "title": "Challenges & Solutions",
                 "items": [
                     "A key challenge was configuring NextAuth providers and managing authentication consistently across both client-side and server-side environments, which required proper session handling and protected route logic."
+                ]
+            },
+            "roadmap": {
+                "title": "Roadmap",
+                "items":[
+                    "Recent Orders table",
+                    "Top Customers list (sort by total spend)",
+                    "Orders page with pagination",
+                    "Customers page",
+                    "Revenue page"
                 ]
             }
         }

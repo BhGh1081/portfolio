@@ -125,3 +125,20 @@ export function Challenges({ projectName }: { projectName: string }) {
         </div>
     )
 }
+
+
+export function Roadmap({ projectName }: { projectName: string }) {
+
+    const t = useTranslations(`project.${projectName}.roadmap`);
+    const items = t.raw('items') as string[];
+    const locale = useLocale();
+
+    return (
+        <div>
+            <h1 className="text-2xl font-bold mb-2">{t('title')}</h1>
+            <ul className={clsx(`list-disc from-pink-800/10 to-background rounded-lg p-5 px-10`, locale === 'en' ? 'bg-linear-to-r' : 'bg-linear-to-l')}>
+                {items.map((item, index) => <li key={index}>{item}</li>)}
+            </ul>
+        </div>
+    )
+}
