@@ -15,7 +15,7 @@ export default function Dashboard() {
     return (
         <div className="p-10 lg:px-30 min-h-screen space-y-20">
             <div className="flex flex-col gap-10">
-                <Introduction projectName="dashboard" />
+                <Introduction projectName="dashboard" githubLink="https://github.com/BhGh1081/OnlineShop-Dashboard.git" />
                 <Slider slides={slides} />
             </div>
             <Features projectName="dashboard" />
