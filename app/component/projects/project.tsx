@@ -19,7 +19,7 @@ export function Introduction({ projectName }: { projectName: string }) {
             <p className="text-[1.1rem]">{t('title')}</p>
             <div className="pt-5 space-y-1">
                 <div className={clsx(`flex flex-col gap-1 from-primary/7 to-background rounded-lg p-4`, locale === 'en' ? 'bg-linear-to-r' : 'bg-linear-to-l')}>
-                    <Link href={'https://dashboard.gholamidev.ir//'} className="flex w-fit gap-2 hover:text-primary">
+                    <Link href={`https://${projectName}.gholamidev.ir//`} className="flex w-fit gap-2 hover:text-primary">
                         <LuLink className="w-5 h-5" />
                         <u>{t('demo')}</u>
                     </Link>
