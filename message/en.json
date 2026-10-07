@@ -102,7 +102,7 @@
                 "title": "Full-Stack Task Management Web Application",
                 "demo": "Live Demo",
                 "account": "Demo Account",
-                "email": "Email: user@demo.com",
+                "userName": "Email: user@demo.com",
                 "pass": "passwoard: 12345",
                 "github": "GitHub Repository"
             },
