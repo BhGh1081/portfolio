@@ -30,7 +30,7 @@ export function Introduction({ projectName, githubLink }: { projectName: string,
                     </section>
                 </div>
                 <div className={clsx(`flex gap-2 from-yellow-500/7 to-background rounded-lg p-5`, locale === 'en' ? 'bg-linear-to-r' : 'bg-linear-to-l')}>
-                    <Link href={github} className="flex w-fit gap-2 hover:text-primary" >
+                    <Link href={githubLink} className="flex w-fit gap-2 hover:text-primary" >
                         <RiGitRepositoryCommitsLine className="w-5 h-5" />
                         <u>{t('github')}</u>
                     </Link>
