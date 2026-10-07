@@ -23,7 +23,7 @@ export default function TodoApp() {
     return (
         <div className="p-10 lg:px-30 min-h-screen">
             <div className="flex flex-col gap-10">
-                <Introduction projectName="todoApp" />
+                <Introduction projectName="todo" />
                 <Slider slides={slides} />
             </div>
 
