@@ -23,21 +23,21 @@ export default function TodoApp() {
     return (
         <div className="p-10 lg:px-30 min-h-screen">
             <div className="flex flex-col gap-10">
-                <Introduction projectName="todoApp" />
+                <Introduction projectName="todo" />
                 <Slider slides={slides} />
             </div>
 
             <div className="flex flex-col gap-15 pt-20">
-                <Overview projectName="todoApp" />
+                <Overview projectName="todo" />
 
-                <Features projectName="todoApp" />
+                <Features projectName="todo" />
 
                 <TechStack
                     frontEnd={['Next.js - ', 'React - ', 'TypeScript - ', 'Tailwind CSS']}
                     backEnd={['Supabase (PostgreSQL)']}
                     development="vercle"
                 />
-                <Challenges projectName="todoApp" />
+                <Challenges projectName="todo" />
             </div>
         </div>
     )
